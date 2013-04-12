@@ -1,3 +1,4 @@
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
 Take note to use HTTPS or SSH
 CONSISTENT WITH ALL GIT REPO USE
