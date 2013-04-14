@@ -10,6 +10,9 @@ let g:EasyMotion_leader_key ='<Leader>'
 noremap <C-E><C-E> :NERDTree<CR>
 noremap <C-E><C-C> :NERDTreeClose<CR>
 
+" save file if shift buffer
+au FocusLost * :wa
+
 " for mapping
 let mapleader = ','
 
