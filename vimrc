@@ -6,6 +6,12 @@ call pathogen#infect()
 " for Easy-motion plugin
 let g:EasyMotion_leader_key ='<Leader>'
 
+" for SuperTab plugin
+let g:SuperTabDefaultCompletionType = "context"
+
+" for repeat plugin
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
 " Bind NerdTree plugin to <Ctrl+E, Ctrl+E>
 noremap <C-E><C-E> :NERDTree<CR>
 noremap <C-E><C-C> :NERDTreeClose<CR>

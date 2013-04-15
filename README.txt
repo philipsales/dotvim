@@ -6,6 +6,8 @@ To install plugins as git submodule
     cd ~/.vim/
     git submodule add http://github.com/tpope/vim-fugitive.git
         bundle/fugitive 
+    git submodule init
+    git submodule update  //to install
     git add .
     git commit -m "INstall Fugitive.vim bundle as submodule"
 
