@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/pjsal/.vim/.git/modules'
 let g:netrw_dirhist_2='/home/pjsal/.vim/.git/modules/nerdtree'
+let g:netrw_dirhist_3='/media/pjsal/PENDRIVE'
+let g:netrw_dirhist_4='/home/pjsal/.vim'

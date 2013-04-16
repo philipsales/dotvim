@@ -31,9 +31,14 @@ nnoremap ; :
 inoremap jj <ESC>
 " set trailing whitespaces
 nnoremap <leader>x :%s/\s\+$//<cr>:let @/=''<CR>
-" set css properties sorted
+" set searched function
 nnoremap <S-F7> zRgg:while search("{$", 'W') \| .+1,/}$/-1sort \| endwhile<CR>
+
+" set css properties sorted
 nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+
+" set CSS autocomplete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " set reseelcted text that was just pasted
 nnoremap <leader>v V`]
 
@@ -52,7 +57,7 @@ set expandtab
 " for Aetheticsx
 set wildmenu
 set wildmode=list:full
-
+colorscheme slate
 "set cursorline
 set visualbell
 set ttyfast
@@ -62,7 +67,7 @@ set backspace=indent,eol,start
 " for window warping/sizing
 set wrap
 set columns=80
-set textwidth=75
+set textwidth=79
 set formatoptions+=tcq
 set formatoptions+=a
 set showbreak=...
