@@ -3,3 +3,8 @@
 tags
 *.*~
 *.~
+*~
+*.lock
+*.DS_store
+*.out
+Thumbs.db
