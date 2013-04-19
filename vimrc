@@ -3,6 +3,9 @@
 filetype off
 call pathogen#infect()
 
+" disable topbar
+set guioptions-=T
+
 " for Easy-motion plugin
 let g:EasyMotion_leader_key ='<Leader>'
 
@@ -62,6 +65,7 @@ set expandtab
 set wildmenu
 set wildmode=list:full
 colorscheme slate
+
 "set cursorline
 set visualbell
 set ttyfast
@@ -177,7 +181,5 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
-
 
 
