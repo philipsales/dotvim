@@ -1,7 +1,11 @@
 	
 " Add for pathogen plugin
+
 filetype off
-call pathogen#infect()
+ call pathogen#infect()
+
+" HTML Folding
+set foldmethod=indent
 
 " disable topbar
 set guioptions-=T
@@ -74,8 +78,8 @@ set backspace=indent,eol,start
 
 " for window warping/sizing
 set wrap
-set columns=80
-set textwidth=79
+set columns=180
+set textwidth=179
 set formatoptions+=tcq
 set formatoptions+=a
 set showbreak=...

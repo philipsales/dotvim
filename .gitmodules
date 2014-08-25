@@ -18,10 +18,13 @@
 	url = git@github.com:Raimondi/delimitMate.git
 [submodule "bundle/closetag"]
 	path = bundle/closetag
-	url = git@github.com:docunext/closetag.vim.git
+    url = https://github.com/docunext/closetag.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = git@github.com:tomtom/tcomment_vim.git
+[submodule "bundle/jslint2"]
+	path = bundle/jslint2
+	url = https://github.com/Shutnik/jshint2.vim.git
