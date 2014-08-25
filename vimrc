@@ -10,6 +10,11 @@ set foldmethod=indent
 " disable topbar
 set guioptions-=T
 
+" for JSHint2 
+let g:jshint2_command ='jshint'
+let g:jshint2_color=1
+let g:jshint2_read=0
+
 " for Easy-motion plugin
 let g:EasyMotion_leader_key ='<Leader>'
 
