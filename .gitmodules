@@ -28,3 +28,6 @@
 [submodule "bundle/jslint2"]
 	path = bundle/jslint2
 	url = https://github.com/Shutnik/jshint2.vim.git
+[submodule "bundle/autoprefixer"]
+	path = bundle/autoprefixer
+	url = https://github.com/Ioannis-Kapoulas/vim-autoprefixer.git
