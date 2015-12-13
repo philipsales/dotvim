@@ -29,8 +29,11 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 " Bind NerdTree plugin to <Ctrl+E, Ctrl+E>
-noremap <C-E><C-E> :NERDTree<CR>
-noremap <C-E><C-C> :NERDTreeClose<CR>
+"noremap <C-E><C-E> :NERDTree<CR>
+"noremap <C-C><C-C> :NERDTreeClose<CR>
+noremap <C-E> :NERDTree<CR>
+noremap <C-D> :NERDTreeToggle<CR>
+noremap <C-C> :NERDTreeClose<CR>
 
 " save file if shift buffer
 au FocusLost * :wa
@@ -73,7 +76,8 @@ set expandtab
 " for Aetheticsx
 set wildmenu
 set wildmode=list:full
-colorscheme slate
+"colorscheme slate
+colorscheme darkblue 
 
 "set cursorline
 set visualbell
@@ -191,4 +195,6 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-
+"hi Normal ctermbg=black
+"colo slate 
+"syntax on
