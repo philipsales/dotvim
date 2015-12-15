@@ -2,11 +2,10 @@
 " Add for pathogen plugin
 
 filetype off
-call pathogen#infect()
-"filetype on
-"":set filetype=html
-"":set smartindent
- 
+ call pathogen#infect()
+filetype on
+:set filetype=html
+:set smartindent
 
 " HTML Folding
 set foldmethod=indent
@@ -18,19 +17,6 @@ set guioptions-=T
 let g:jshint2_command ='jshint'
 let g:jshint2_color=1
 let g:jshint2_read=0
-
-" for vim-javascript 
-let g:javascript_enable_domhtmlcss = 1
-
-" for Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " for Easy-motion plugin
 let g:EasyMotion_leader_key ='<Leader>'
@@ -46,11 +32,8 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 " Bind NerdTree plugin to <Ctrl+E, Ctrl+E>
-"noremap <C-E><C-E> :NERDTree<CR>
-"noremap <C-C><C-C> :NERDTreeClose<CR>
-noremap <C-E> :NERDTree<CR>
-noremap <C-D> :NERDTreeToggle<CR>
-noremap <C-C> :NERDTreeClose<CR>
+noremap <C-E><C-E> :NERDTree<CR>
+noremap <C-E><C-C> :NERDTreeClose<CR>
 
 " save file if shift buffer
 au FocusLost * :wa
@@ -93,25 +76,7 @@ set expandtab
 " for Aetheticsx
 set wildmenu
 set wildmode=list:full
-
-
-"colorscheme slate
-" colorscheme darkblue 
-
-" color molokai
-"colorscheme molokai 
-let g:rehash256 = 1
-let g:molokai_original = 1
-
-" for vim-indent-guides
-let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=5
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-hi IndentGuidesOdd  ctermbg=black
-hi IndentGuidesEven ctermbg=darkgrey
-colorscheme darkblue
-set background=dark
-
+colorscheme slate
 
 "set cursorline
 set visualbell
@@ -121,7 +86,7 @@ set backspace=indent,eol,start
 
 " for window warping/sizing
 set wrap
-set columns=180
+set columns=80
 set textwidth=179
 set formatoptions+=tcq
 set formatoptions+=a
@@ -228,4 +193,5 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
 
