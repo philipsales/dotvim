@@ -99,18 +99,24 @@ set wildmode=list:full
 " colorscheme darkblue 
 
 " color molokai
-"colorscheme molokai 
+colorscheme molokai 
 let g:rehash256 = 1
 let g:molokai_original = 1
 
 " for vim-indent-guides
-let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=5
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+" Press ,ig
+:nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_auto_colors = 1
+let g:indent_guides_color_change_percent = 90 
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
-colorscheme darkblue
-set background=dark
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_space_guides = 1
+"let g:indent_guides_default_mapping = 0
+"set background=dark
 
 
 "set cursorline
