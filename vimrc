@@ -22,6 +22,8 @@ let g:jshint2_read=0
 " for vim-javascript 
 let g:javascript_enable_domhtmlcss = 1
 
+
+
 " for Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -137,6 +139,9 @@ set showbreak=...
 set nolist
 set listchars=tab:▸\ ,eol:¬
 " set relativenumbe
+
+" for vim-json
+let g:vim_json_syntax_conceal = 0
 
 " for Line numbers
 set cpoptions+=n
