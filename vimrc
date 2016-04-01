@@ -4,8 +4,8 @@
 filetype off
 call pathogen#infect()
 "filetype on
-"":set filetype=html
-"":set smartindent
+:set filetype=html
+:set smartindent
  
 
 " HTML Folding
@@ -23,7 +23,6 @@ let g:jshint2_read=0
 let g:javascript_enable_domhtmlcss = 1
 
 
-
 " for Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -32,7 +31,10 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+
+" for status line
+set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 
 " for Easy-motion plugin
 let g:EasyMotion_leader_key ='<Leader>'
@@ -92,6 +94,10 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" for color column
+set colorcolumn=80
+
+
 " for Aetheticsx
 set wildmenu
 set wildmode=list:full
@@ -126,11 +132,12 @@ set visualbell
 set ttyfast
 set showmode
 set backspace=indent,eol,start
+set ruler
 
 " for window warping/sizing
 set wrap
-set columns=180
-set textwidth=179
+set columns=80
+set textwidth=78
 set formatoptions+=tcq
 set formatoptions+=a
 set showbreak=...

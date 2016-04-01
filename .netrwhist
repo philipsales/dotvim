@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/etc/apache2/conf.d'
-let g:netrw_dirhist_2='/home/pjsal/.vim'
-let g:netrw_dirhist_3='/Users/ghost/.vim/bundle/closetag'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/ghost/Sites/django-project/mysite'
+let g:netrw_dirhist_2='/Users/ghost/.vim'
+let g:netrw_dirhist_3='/Users/ghost/Sites/django-project/crud'
+let g:netrw_dirhist_4='/Users/ghost/.vim'
