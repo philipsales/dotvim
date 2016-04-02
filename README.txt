@@ -33,3 +33,8 @@ To update a specific plugin bundle
 To upgrade all bundle plugins
     cd ~/.vim
     sudo git submodule foreach git pull origin master
+
+To delete directory submodule
+   git rm --cached submodule
+          cd ~/.vim
+     e.g  git rm --cached bundle/bundle/vim-indent-guides
